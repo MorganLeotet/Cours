@@ -4,21 +4,87 @@
         <meta charset="UTF-8" />
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-gray-200 flex content-center h-full justify-center items-center">
+    <body>
+        <main>
 
-        <div class="bg-white shadow-lg max-w-lg ">
-            <img class="w-full h-40 object-cover" src="https://picsum.photos/id/1047/200/300" alt="">
-            <div class="p-4">
-                <h1 class="text-2xl font-bold text-gray-800">Test boîte de connexion en tailwind Css</h1>
+        <!-- Premier Exercices Tailwind CSS --->
+            <p class="text-blue-500 text-center font-bold p-3">Hello</p>
+
+            <div class="bg-gray-200 pt-2 my-3 font-bold text-center text-red-300">welcome</div>
+
+            <button class="bg-green-400 text-white px-4 pt-2 text-center font-bold">Click me !!!</button> 
+        
+        <!-- Exercices : Mini Projet (carte de présentation) -->
+
+            <div class="bg-blue-300 pt-2 mx-2 my-2 font-bold text-center">
+                <h1 class="text-white font-bold">Carte de Présentation</h1>
+                <p class="text-center text-black-300 font-bold">Hello je suis un développeur web</p>
+                <button class="bg-orange-300 font-bold text-center">c'est ici !!!</button>
+            </div>
+
+        <!--FLEXBOX AVEC TAILWIND CSS -->
+
+        <!-- Exercice 1 : créer un header -->
+
+        <header class="flex justify-center">
+            <ul class="flex flex-row items-center gap-4">
+                <li class="bg-blue-200 text-center font-bold"><a href="#">Accueil</a></li>
+                <li class="bg-red-300 text-center font-bold"><a href="#">À propos</a></li>
+                <li class="bg-green-200 text-center font-bold"><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <!-- Exercice 2 : créer une liste verticale de 4 boutons-->
+        
+        <div class="flex flex-col items-center gap-4 mt-3">
+            <button class="bg-orange-200 text-center font-bold">Par ici !!</button>
+            <button class="bg-purple-200 text-center font-bold">Non ici !!</button>
+            <button class="bg-yellow-200 text-center font-bold">Non par là !!</button>
+            <button class="bg-pink-200 text-center font-bold">Coucou !!</button>
+        </div>
+
+        <!-- Exercice 3 : créer une mini-card layout -->
+
+        <div class="flex flex-row bg-blue-200 pt-2 justify-center font-bold my-14 mx-20 gap-4">
+            <div class="flex flex-col bg-gray-100 pt-2">
+                <h2 class="text-center font-bold">Mini-Card Layout</h2>
+                <p class="text-center font-bold">Contenu de la mini-card</p>
+                <button class="bg-red-300 font-bold text-center">Cliquez ici</button>
+            </div>
+
+            <div class="flex flex-col bg-gray-100 pt-2">
+                <h2 class="text-center font-bold">Mini-Card Layout</h2>
+                <p class="text-center font-bold">Contenu de la mini-card</p>
+                <button class="bg-orange-300 font-bold text-center">Cliquez ici</button>
             </div>
         </div>
 
-        <main>
-            <article></article>
+        <!-- Mini-Projet : créer une section produits-->
 
-            <aside></aside>
+        <section class="products flex flex-row bg-gray-100 justify-center gap-4">
+
+            <div class="card1 flex flex-col bg-blue-100 pt-2 gap-2">
+                <h2 class="text-center font-bold">Légumes</h2>
+                <p class="text-center font-bold">Découvrez nos légumes frais</p>
+                <button class="bg-green-200 font-bold text-center">Voir nos produits</button>
+            </div>
+
+            <div class="card2 flex flex-col bg-blue-100 pt-2 gap-2">
+                <h2 class="text-center font-bold">Fruits</h2>
+                <p class="text-center font-bold">Découvrez nos Fruits frais</p>
+                <button class="bg-green-200 font-bold text-center">Voir nos produits</button>
+            </div>
+
+            <div class="card2 flex flex-col bg-blue-100 pt-2 gap-2">
+                <h2 class="text-center font-bold">Viandes</h2>
+                <p class="text-center font-bold">Découvrez nos Viandes fraîches</p>
+                <button class="bg-green-200 font-bold text-center">Voir nos produits</button>
+            </div>
+        </section>
+
+
         </main>
         <footer></footer>
     </body>
