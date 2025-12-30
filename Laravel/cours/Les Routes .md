@@ -2,13 +2,13 @@
 
 ## C'est quoi une Route 
 
-Une route dit à Laravel :  "Quand un utilisateur va à cette URL, fias ça."
+Une route dit à Laravel :  "Quand un utilisateur va à cette URL, fais ça."
 
 - Exemple : 
 
 Dans Laravel, les routes sont dans: routes/web.php
 
-Exemple : 
+- Exemple : 
 
 Route::get('Bonjour', function () ) {
     return "Bonjour Laravel";
